@@ -185,9 +185,60 @@
 			"ver": "18.8.20.143",
 			"description": "Webshop: Read customer",
 			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "ceaa091c-b350-4281-8c0d-06d7e6938fea",
+			"name": "WebshopUploadTableData"
+		},
+		{
+			"id": "0860e35c-7fc5-4974-bff2-16bef95e6ea6",
+			"name": "WebshopWishlistUpdate"
+		},
+		{
+			"id": "547900f0-36c4-4ad4-ba3e-0b25fdc2ee2e",
+			"name": "WebshopCustomerDelete"
+		},
+		{
+			"id": "00eba5e6-91a7-4525-8d82-3ac4352fc6e2",
+			"name": "WebshopCustomerUpdate"
+		},
+		{
+			"id": "19f655ef-b4eb-4ff6-96ec-3a6587f7da5c",
+			"name": "WebshopPostTableData"
+		},
+		{
+			"id": "9dc7e0b5-404a-40a0-8c8f-ab13f13f1418",
+			"name": "WebshopProductList"
+		},
+		{
+			"id": "56f5682c-ccf3-4fd7-9f7e-cecb4f9e2680",
+			"name": "WebshopUploadProfilePicture"
+		},
+		{
+			"id": "cc19b421-0461-4a23-b831-9d2d05e8462b",
+			"name": "WebshopMasterdataRead"
+		},
+		{
+			"id": "4afc8d05-2dd4-4759-9805-7a87e722b989",
+			"name": "WebshopProductRead"
+		},
+		{
+			"id": "8bb3a14a-ec2c-40dc-8e1c-506064b9668d",
+			"name": "WebshopCustomerList"
+		},
+		{
+			"id": "ae075155-0288-4d23-8c7f-8647bc356352",
+			"name": "WebshopCustomerRead"
 		}
 	],
-	"jsscript_group": [],
+	"jsscript_group": [
+		{
+			"id": "b348e8c2-3ad0-4d52-8334-58f371f58d7c",
+			"name": "Webshop",
+			"description": "Project Webshop",
+			"ver": "21.6.28.176"
+		}
+	],
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
