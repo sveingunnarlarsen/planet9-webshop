@@ -1,0 +1,25 @@
+{
+	"id": "d2643288-07fc-46fa-a6d7-188ce047883d",
+	"createdAt": "2018-04-10T13:44:06.000Z",
+	"createdBy": "oah",
+	"fields": [
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"id": "625bad45-3b3b-4271-aab9-c231ea98c362"
+		},
+		{
+			"fieldName": "content",
+			"fieldType": "text",
+			"id": "0f267081-b203-4568-8e21-2455b61ed0ba"
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"name": "p9media",
+	"description": "WebShop: All images/media ",
+	"ver": "18.6.11.1055",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

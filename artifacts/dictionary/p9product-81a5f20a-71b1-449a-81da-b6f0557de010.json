@@ -1,0 +1,64 @@
+{
+	"id": "81a5f20a-71b1-449a-81da-b6f0557de010",
+	"createdAt": "2018-04-10T13:39:19.000Z",
+	"createdBy": "oah",
+	"fields": [
+		{
+			"fieldName": "productNo",
+			"fieldType": "text",
+			"id": "5a47443c-df7d-4887-a924-36e4bf7b377b",
+			"description": "Product"
+		},
+		{
+			"fieldName": "title",
+			"fieldType": "text",
+			"id": "b2aa33f7-fa25-426d-a7f8-5b6b4b11ae7a",
+			"description": "Name"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"id": "59249f37-f3e3-43e4-8644-277f385e41ae",
+			"description": "Description",
+			"isNullable": true
+		},
+		{
+			"fieldName": "price",
+			"fieldType": "decimal",
+			"id": "6c0f00fb-a867-493d-8d9e-7f0dd49155a3",
+			"description": "Price",
+			"precision": "9",
+			"scale": "2",
+			"isNullable": true
+		},
+		{
+			"fieldName": "currency",
+			"fieldType": "text",
+			"id": "67266e7b-bafc-453d-ab79-2c897bf8c345",
+			"description": "Currency",
+			"isNullable": true
+		},
+		{
+			"fieldName": "category",
+			"fieldType": "text",
+			"description": "Category",
+			"id": "7989759a-d46a-4b8d-9b6b-762d29747350",
+			"isNullable": true
+		},
+		{
+			"fieldName": "imageId",
+			"fieldType": "text",
+			"id": "1d2bf153-f3ef-4f31-af70-094d27b62097",
+			"description": "Image URL",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "p9product",
+	"description": "Webshop: Products",
+	"ver": "20.12.21.119",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

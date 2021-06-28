@@ -1,0 +1,35 @@
+{
+	"id": "71c1f043-73d3-4a85-a12f-2fe7fe33eb1b",
+	"createdAt": "2018-04-26T13:00:11.000Z",
+	"createdBy": "morten",
+	"fields": [
+		{
+			"fieldName": "productNo",
+			"fieldType": "text",
+			"id": "f5ac9083-2581-408b-a7e0-127baa5eed72"
+		},
+		{
+			"fieldName": "descriptionNo",
+			"fieldType": "text",
+			"id": "5d42ab9d-8c45-4c85-8ff5-aed6cc994820"
+		},
+		{
+			"fieldName": "descriptionText",
+			"fieldType": "text",
+			"id": "cc783175-37ce-43ce-acaa-c98ba6b86521"
+		},
+		{
+			"fieldName": "descriptionImage",
+			"fieldType": "text",
+			"id": "c9b03d92-4f8c-4918-baca-a67550ee6e15"
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"name": "p9productdescription",
+	"description": "Webshop: Product Descriptions",
+	"ver": "18.6.11.1055",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

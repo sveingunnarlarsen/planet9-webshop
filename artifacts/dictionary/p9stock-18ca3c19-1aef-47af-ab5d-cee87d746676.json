@@ -1,0 +1,64 @@
+{
+	"id": "18ca3c19-1aef-47af-ab5d-cee87d746676",
+	"createdAt": "2018-06-05T13:27:35.000Z",
+	"createdBy": "morten",
+	"fields": [
+		{
+			"fieldName": "warehouseNo",
+			"fieldType": "text",
+			"id": "51fb4b96-5a19-4e44-bdc7-9805df1a5569",
+			"description": "Warehouse"
+		},
+		{
+			"fieldName": "productNo",
+			"fieldType": "text",
+			"id": "db2596ee-e81a-4014-aa10-70c32a813dd5",
+			"description": "Product"
+		},
+		{
+			"fieldName": "quantity",
+			"fieldType": "decimal",
+			"id": "1d74e49a-6cf1-4510-bbc2-28364cc2edb2",
+			"isNullable": true,
+			"description": "Quantity",
+			"precision": "9",
+			"scale": "2"
+		},
+		{
+			"id": "3c92e4a4-af20-4866-fd33-fc58abe6a9a5",
+			"fieldName": "unit",
+			"fieldType": "text",
+			"description": "Unit",
+			"isNullable": true
+		},
+		{
+			"id": "9e083570-b84f-4d47-cbaa-68db7402702c",
+			"fieldName": "image",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "477cd3e6-041d-4566-d33b-fdbe1fb41617",
+			"fieldName": "scrap",
+			"fieldType": "boolean",
+			"isNullable": true,
+			"default": "false",
+			"description": "Scrapped"
+		},
+		{
+			"id": "78ec5a1c-4308-483e-a636-27f32f98f105",
+			"fieldName": "scrapDate",
+			"fieldType": "timestamptz",
+			"description": "Scrapped On",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "p9stock",
+	"description": "Webshop: Stock",
+	"ver": "20.11.30.2047",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

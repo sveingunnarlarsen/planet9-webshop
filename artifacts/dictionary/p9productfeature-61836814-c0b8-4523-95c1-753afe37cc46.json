@@ -1,0 +1,30 @@
+{
+	"id": "61836814-c0b8-4523-95c1-753afe37cc46",
+	"createdAt": "2018-04-26T12:58:34.000Z",
+	"createdBy": "morten",
+	"fields": [
+		{
+			"fieldName": "productNo",
+			"fieldType": "text",
+			"id": "2c53a943-1556-4cd7-8af4-bb641343f914"
+		},
+		{
+			"fieldName": "featureNo",
+			"fieldType": "text",
+			"id": "ef37e7f5-a9fd-40a2-b521-d810a5ef0709"
+		},
+		{
+			"fieldName": "featureText",
+			"fieldType": "text",
+			"id": "fe35c0bf-b317-4af2-9b2c-4e805356a84e"
+		}
+	],
+	"indices": null,
+	"foreignKeys": null,
+	"name": "p9productfeature",
+	"description": "Webshop: Product Features",
+	"ver": "18.6.11.1055",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

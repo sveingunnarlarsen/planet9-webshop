@@ -1,0 +1,3114 @@
+{
+	"id": "d6ddad62-02f8-4d99-b79c-2f9c144c03a6",
+	"createdAt": "2017-09-05T09:22:09.000Z",
+	"updatedAt": "2018-06-13T12:04:01.000Z",
+	"createdBy": "morten",
+	"changedBy": "morten",
+	"objects": [
+		{
+			"fieldNo": "1",
+			"fieldName": "Shell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "2",
+					"fieldName": "oApp",
+					"fieldParent": "1",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "defaultTransitionName",
+							"grouping": "Properties",
+							"value": "show",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "4",
+							"fieldName": "PageDatauploader",
+							"fieldParent": "2",
+							"fieldType": "sap.m.Page",
+							"bindingValue": "Generic Object",
+							"bindingType": "u",
+							"bindingSource": "P9",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Full Screen",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "354fc96d-3048-4d9c-c6c5-cb746f68277d",
+									"fieldName": "FormTableType",
+									"fieldParent": "4",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"bindingType": "u",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "ResponsiveGridLayout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "labelSpanM",
+											"grouping": "Properties",
+											"value": "6",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "labelSpanL",
+											"grouping": "Properties",
+											"value": "6",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "da91e1d0-1779-4996-d4dc-8c83f83d3ff6",
+											"fieldName": "lblSelectTableType",
+											"fieldParent": "354fc96d-3048-4d9c-c6c5-cb746f68277d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Select Table Type",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "b2d0e228-c826-417d-af44-e3ea1cd83039",
+											"fieldName": "inpSelectTableType",
+											"fieldParent": "354fc96d-3048-4d9c-c6c5-cb746f68277d",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "valueHelpOnly",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/tableType}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showValueHelp",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "enabled",
+													"grouping": "Properties",
+													"value": "{= ${/state} === 'INIT' || ${/state} === 'READY' }",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "valueHelpRequest",
+													"grouping": "Events",
+													"value": "dialogTableType.open();",
+													"script": "dialogTableType.open();",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "1a8e6645-55e4-4f17-8ba0-7fe1ce4c437c",
+											"fieldName": "lblFileuploader",
+											"fieldParent": "354fc96d-3048-4d9c-c6c5-cb746f68277d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Semicolon separated file",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "2999a772-22bd-4c05-a1f0-c077362bee7f",
+											"fieldName": "fileUploader",
+											"fieldParent": "354fc96d-3048-4d9c-c6c5-cb746f68277d",
+											"fieldType": "sap.ui.unified.FileUploader",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/fileValue}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "uploadOnChange",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "sendXHR",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "sameFilenameAllowed",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://upload",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "fileType",
+													"grouping": "Properties",
+													"value": "[\"csv\"]",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "enabled",
+													"grouping": "Properties",
+													"value": "{= ${/state} === 'READY' }",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "buttonText",
+													"grouping": "Properties",
+													"value": "UTF-8 Encoded .CSV filetype",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "buttonOnly",
+													"grouping": "Properties",
+													"value": "true",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "additionalData",
+													"grouping": "Properties",
+													"value": "{/tableType}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "uploadStart",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": [
+														"==OBJECT STRING==",
+														"",
+														"console.log('Fileupload: uploadStart...');"
+													],
+													"translation": []
+												},
+												{
+													"attribute": "uploadComplete",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": [
+														"==OBJECT STRING==",
+														"console.log('Fileupload: uploadComplete...');",
+														"sap.ui.core.BusyIndicator.hide();",
+														"",
+														"var responseRaw = oEvent.getParameter('responseRaw');",
+														"var result = JSON.parse(responseRaw).result;",
+														"var tabData = JSON.parse(responseRaw).tableData;",
+														"",
+														"if (result.statusCode === 0) {",
+														"",
+														"    var data = modelPageDatauploader.getData();",
+														"    data.state = z.appState.POST;",
+														"    modelPageDatauploader.setData(data);",
+														"    ",
+														"} else {",
+														"    ",
+														"    sap.m.MessageToast.show(result.statusText);",
+														"    return;",
+														"}",
+														"",
+														"$.each(tabData[0], function(key, value) {",
+														"",
+														"    var colTableData = new sap.m.Column(\"colTableData\" + key, {});",
+														"    var lblTableData = new sap.m.Text(\"lblTableData\" + key, {",
+														"        text: key",
+														"    });",
+														"    var txtTableData = new sap.m.Text(\"txtTableData\" + key, {",
+														"        text: \"{\" + key + \"}\"",
+														"    });",
+														"",
+														"    TableData.addColumn(colTableData);",
+														"",
+														"    colTableData.setHeader(lblTableData);",
+														"",
+														"    columnListTableData.addCell(txtTableData);",
+														"",
+														"});",
+														"",
+														"modelTableData.setData(tabData);"
+													],
+													"translation": []
+												},
+												{
+													"attribute": "typeMissmatch",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": [
+														"==OBJECT STRING==",
+														"sap.m.MessageToast.show(\"Fileupload: typeMissmatch...\");",
+														""
+													],
+													"translation": []
+												},
+												{
+													"attribute": "change",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": [
+														"==OBJECT STRING==",
+														"console.log('Fileupload: change...');",
+														"sap.ui.core.BusyIndicator.show();"
+													],
+													"translation": []
+												},
+												{
+													"attribute": "uploadUrl",
+													"grouping": "Properties",
+													"value": "/api/serverscript/webshop/uploadTableData",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "10869f2a-b38e-4881-ee33-13e421150b5d",
+									"fieldName": "TableData",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Table",
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "showNoData",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "mode",
+											"grouping": "Properties",
+											"value": "Delete",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "growingScrollToLoad",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "growing",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "delete",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"var deleteItem = oEvent.getParameter(\"listItem\");",
+												"var context = deleteItem.getBindingContext();",
+												"var dataObj = context.getObject(context.getPath());",
+												"",
+												"var keyFields = [];",
+												"var valueFields = [];",
+												"",
+												"$.each(dataObj, function(key, value) {",
+												"    ",
+												"    keyFields.push(key);",
+												"    valueFields.push(value);",
+												"});",
+												"",
+												"ModelData.Delete(TableData, keyFields, valueFields);",
+												""
+											],
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "1727c39f-6a34-4ec3-e748-5fb1e69e4602",
+											"fieldName": "columnListTableData",
+											"fieldParent": "10869f2a-b38e-4881-ee33-13e421150b5d",
+											"fieldType": "sap.m.ColumnListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "5",
+									"fieldName": "footer",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "6",
+											"fieldName": "Left",
+											"fieldParent": "5",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentLeft",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "7",
+											"fieldName": "Middle",
+											"fieldParent": "5",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentMiddle",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "8",
+											"fieldName": "Right",
+											"fieldParent": "5",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "2ee434d1-a3d0-4c0e-e112-5b27902dbba0",
+													"fieldName": "btnClear",
+													"fieldParent": "8",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Reject",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Refresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://refresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "enabled",
+															"grouping": "Properties",
+															"value": "{= ${/state} === 'DONE' || ${/state} === 'POST' }",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"TableData.destroyColumns();",
+																"var data = modelPageDatauploader.getData();",
+																"data.tableType = '';",
+																"data.state = z.appState.READY;",
+																"modelPageDatauploader.setData(data);"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "da601289-0329-401d-8ed2-bcb1866d59c8",
+													"fieldName": "btnPostTableData",
+													"fieldParent": "8",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Emphasized",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Post Table Data",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://save",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "enabled",
+															"grouping": "Properties",
+															"value": "{= ${/state} === 'POST' }",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"var tableData = JSON.stringify(modelTableData.getData());",
+																"",
+																"sap.ui.core.BusyIndicator.show();",
+																"apiPostTableData({",
+																"    data: {",
+																"        tableName: modelPageDatauploader.getData().tableType,",
+																"        tableData: tableData",
+																"    }",
+																"});"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "e073fd11-ead7-4c60-c95e-50be8e332ad3",
+					"fieldName": "dialogTableType",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.Dialog",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Select Tabletype",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "styleClassPadding",
+							"grouping": "Properties",
+							"value": "sapUiNoContentPadding",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "styleClassMargin",
+							"grouping": "Properties",
+							"value": "sapUiNoMargin",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "577880fc-472c-48f2-b354-9beb8252e135",
+							"fieldName": "ListTableType",
+							"fieldParent": "e073fd11-ead7-4c60-c95e-50be8e332ad3",
+							"fieldType": "sap.m.List",
+							"bindingValue": "Generic Array",
+							"bindingType": "h",
+							"bindingSource": "P9",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "9bb047ff-b094-4f34-c657-54e1a22d34a1",
+									"fieldName": "itemListTableType",
+									"fieldParent": "577880fc-472c-48f2-b354-9beb8252e135",
+									"fieldType": "sap.m.StandardListItem",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Active",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "{tableType}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"var context = oEvent.getSource().getBindingContext();",
+												"var objectData = context.getObject(context.getPath());",
+												"",
+												"var data = modelPageDatauploader.getData();",
+												"data.tableType = objectData.tableType;",
+												"data.state = z.appState.READY;",
+												"modelPageDatauploader.setData(data);",
+												"",
+												"dialogTableType.close();"
+											],
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "321cbcf2-942a-4340-8c43-3f206e67e55b",
+					"fieldName": "onInit",
+					"fieldParent": 99999,
+					"fieldType": "neptune.event.oninit",
+					"script": [
+						"==OBJECT STRING==",
+						"modelListTableType.setData([{",
+						"    tableType: 'p9countries'",
+						"}, {",
+						"    tableType: 'p9customer'",
+						"}, {",
+						"    tableType: 'p9media'",
+						"}, {",
+						"    tableType: 'p9product'",
+						"}, {",
+						"    tableType: 'p9productcategory'",
+						"}, {",
+						"    tableType: 'p9productdescription'",
+						"}, {",
+						"    tableType: 'p9productfeature'",
+						"}, {",
+						"    tableType: 'p9stock'",
+						"}, {",
+						"    tableType: 'p9warehouse'",
+						"}]);",
+						"",
+						"modelPageDatauploader.setData({",
+						"    state: z.appState.INIT",
+						"});",
+						""
+					],
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "6fcb477f-3a65-4e0d-cda7-60a7f677f846",
+					"fieldName": "PostTableData",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"restSource": "8745dd55-fa52-434b-acb3-509b56213707",
+					"restOperation": "4ac5484d-4cc7-444b-b214-54adfb20a5e7",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": [
+								"==OBJECT STRING==",
+								"sap.ui.core.BusyIndicator.hide();",
+								"sap.m.MessageToast.show(xhr.responseJSON.result.statusText);",
+								""
+							],
+							"translation": []
+						},
+						{
+							"attribute": "ajaxError",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": [
+								"==OBJECT STRING==",
+								"sap.ui.core.BusyIndicator.hide();",
+								"sap.m.MessageToast.show(xhr.statusText);"
+							],
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "765fce1f-bb24-43c8-c721-e231a94e87f2",
+					"fieldName": "functions",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"if (!sap.z) {",
+						"    sap.z = {};",
+						"}",
+						"sap.z[localAppID] = {};",
+						"var z = sap.z[localAppID];",
+						"",
+						"z.appState = {",
+						"    INIT: \"INIT\",",
+						"    READY: \"READY\",",
+						"    POST: \"POST\",",
+						"    DONE: \"DONE\"",
+						"};",
+						"",
+						"z.ListTableType = ListTableType;",
+						"z.FormTableType = FormTableType;",
+						"z.PageDatauploader = PageDatauploader;",
+						"z.fileUploader = fileUploader;",
+						"z.columnListTableData = columnListTableData;",
+						"z.TableData = TableData;"
+					],
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "18.6.5.1529",
+	"application": "p9datauploader",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"appType": "",
+	"ui5_m": true,
+	"ui5_f": null,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_belize",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": null,
+	"apis": [
+		{
+			"id": "8745dd55-fa52-434b-acb3-509b56213707",
+			"createdAt": "2018-04-10T14:25:17.000Z",
+			"updatedAt": "2018-06-10T22:42:24.000Z",
+			"createdBy": "admin",
+			"changedBy": "morten",
+			"auth": [],
+			"endpoints": [],
+			"paths": [
+				{
+					"id": "4555744f-a4df-4f23-9d5b-a61c814c347c",
+					"method": "GET",
+					"path": "/masterdataRead",
+					"description": "",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "masterdata",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"summary": "Get masterdata",
+					"serverScript": "cc19b421-0461-4a23-b831-9d2d05e8462b",
+					"tags": "Masterdata",
+					"enableTrace": true
+				},
+				{
+					"id": "a225b0f3-2c8c-465d-fbf9-c804077e2a8b",
+					"method": "GET",
+					"path": "/customerList",
+					"description": "",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "customer",
+									"objectType": "array"
+								}
+							]
+						}
+					],
+					"summary": "List customers",
+					"serverScript": "8bb3a14a-ec2c-40dc-8e1c-506064b9668d",
+					"tags": "Customer"
+				},
+				{
+					"id": "a4247a0c-3437-4143-ab46-b847538b7be7",
+					"method": "POST",
+					"path": "/customerUpdate",
+					"description": "Update or create a customer",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "customer",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"serverScript": "00eba5e6-91a7-4525-8d82-3ac4352fc6e2",
+					"summary": "Update customer",
+					"content": [
+						{
+							"name": "customer",
+							"objectType": "object"
+						}
+					],
+					"tags": "Customer"
+				},
+				{
+					"id": "ff7a58af-ade1-4fec-a3e1-2deea1d259fc",
+					"method": "DELETE",
+					"path": "/customerDelete",
+					"description": "",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "status",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"tags": "Customer",
+					"summary": "Delete customer",
+					"serverScript": "547900f0-36c4-4ad4-ba3e-0b25fdc2ee2e",
+					"content": [
+						{
+							"name": "customer",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"id": "fdf311ba-f217-4d79-88de-9bbe715ce604",
+					"method": "GET",
+					"path": "/productRead",
+					"description": "",
+					"parameters": [
+						{
+							"name": "productNo",
+							"description": "",
+							"required": false,
+							"inPath": false,
+							"value": "",
+							"default": "",
+							"example": ""
+						}
+					],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "product",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"tags": "Product",
+					"summary": "Get Product",
+					"serverScript": "4afc8d05-2dd4-4759-9805-7a87e722b989",
+					"enableTrace": true
+				},
+				{
+					"id": "060a5015-a42c-4c38-e1f6-36de92172f30",
+					"method": "GET",
+					"path": "/productList",
+					"description": "",
+					"parameters": [
+						{
+							"name": "category",
+							"description": "",
+							"required": false,
+							"inPath": false,
+							"value": "",
+							"default": "",
+							"example": ""
+						}
+					],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "product",
+									"objectType": "array"
+								}
+							]
+						}
+					],
+					"serverScript": "9dc7e0b5-404a-40a0-8c8f-ab13f13f1418",
+					"tags": "Product",
+					"enableExample": false,
+					"summary": "List products in category",
+					"enableTrace": true,
+					"content": []
+				},
+				{
+					"id": "56d2c9e5-7e63-4b51-be79-2963ae24e9c2",
+					"method": "POST",
+					"path": "/uploadTableData",
+					"description": "",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "status",
+									"objectType": "object"
+								},
+								{
+									"name": "tableData",
+									"objectType": "array"
+								}
+							]
+						}
+					],
+					"tags": "Masterdata",
+					"serverScript": "ceaa091c-b350-4281-8c0d-06d7e6938fea",
+					"content": []
+				},
+				{
+					"id": "4ac5484d-4cc7-444b-b214-54adfb20a5e7",
+					"method": "POST",
+					"path": "/postTableData",
+					"description": "",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "status",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"tags": "Masterdata",
+					"serverScript": "19f655ef-b4eb-4ff6-96ec-3a6587f7da5c"
+				},
+				{
+					"id": "e7f535db-701e-4eca-ef15-acbcce140765",
+					"method": "GET",
+					"path": "/customerRead",
+					"description": "",
+					"parameters": [],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "customer",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"tags": "Customer",
+					"serverScript": "ae075155-0288-4d23-8c7f-8647bc356352",
+					"summary": "Read customer"
+				},
+				{
+					"id": "bd623440-c96f-413f-efd3-d9820d47a424",
+					"method": "POST",
+					"path": "/uploadProfilePicture",
+					"description": "",
+					"parameters": [
+						{
+							"name": "imageData",
+							"description": "",
+							"required": false,
+							"inPath": false,
+							"value": "",
+							"default": "",
+							"example": ""
+						}
+					],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": [],
+							"content": [
+								{
+									"name": "user",
+									"objectType": "object"
+								}
+							]
+						}
+					],
+					"serverScript": "56f5682c-ccf3-4fd7-9f7e-cecb4f9e2680",
+					"tags": "Customer",
+					"content": []
+				},
+				{
+					"id": "64e2f184-53f2-4246-d20a-c394dfd7a36d",
+					"method": "POST",
+					"path": "/wishlistUpdate",
+					"description": "",
+					"parameters": [
+						{
+							"name": "productNo",
+							"description": "",
+							"required": false,
+							"inPath": false,
+							"value": "",
+							"default": "",
+							"example": ""
+						},
+						{
+							"name": "favorite",
+							"description": "",
+							"required": false,
+							"inPath": false,
+							"value": "",
+							"default": "",
+							"example": ""
+						}
+					],
+					"headers": [],
+					"responses": [
+						{
+							"status": "200",
+							"description": "OK",
+							"headers": [],
+							"body": []
+						}
+					],
+					"tags": "Product",
+					"serverScript": "0860e35c-7fc5-4974-bff2-16bef95e6ea6",
+					"summary": "Update User",
+					"example": ""
+				}
+			],
+			"definitions": [
+				{
+					"id": "caed8ad1-8250-41b8-c918-a4822deab4db",
+					"name": "masterdata",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "eef18268-b65c-43c6-e5fc-b6342654c6cf",
+							"name": "id",
+							"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "5ae2cab6-c2c3-452f-b52d-74f913a29e89",
+							"name": "isoCode",
+							"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2857f62c-9457-46fb-facd-6af4cf064ad1",
+							"name": "name",
+							"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6d32e729-4134-4bc0-efbf-f7cd1f5f9572",
+							"name": "createdAt",
+							"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "cbda3286-1b81-40a6-c13c-2ddf45fd5512",
+							"name": "updatedAt",
+							"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+							"name": "countries",
+							"parent": "731ccefb-a616-4d2d-c425-e38127204254",
+							"description": "",
+							"objectType": "array",
+							"objectName": "countries",
+							"isParent": true,
+							"children": [
+								{
+									"id": "eef18268-b65c-43c6-e5fc-b6342654c6cf",
+									"name": "id",
+									"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "5ae2cab6-c2c3-452f-b52d-74f913a29e89",
+									"name": "isoCode",
+									"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "2857f62c-9457-46fb-facd-6af4cf064ad1",
+									"name": "name",
+									"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "6d32e729-4134-4bc0-efbf-f7cd1f5f9572",
+									"name": "createdAt",
+									"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "cbda3286-1b81-40a6-c13c-2ddf45fd5512",
+									"name": "updatedAt",
+									"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "c20c4653-bb62-453c-c586-882152144e9f",
+							"name": "id",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1284e4fd-fba1-4cc2-e853-f3a50b4b0fcd",
+							"name": "warehouseNo",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "353a9a5b-2021-4800-bd0b-2956c6cc0cc8",
+							"name": "name",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "7035e196-2f7e-4848-d164-b866cbf2b9a4",
+							"name": "addressLine1",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "63df5395-e11d-45e8-e0c7-da81ea3de342",
+							"name": "addressLine2",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "dae2d85b-7287-4ff7-f530-0a6e5b46ea75",
+							"name": "addressLine3",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b7829f22-7cbd-4667-bbe0-654036c19f85",
+							"name": "city",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2f2a7961-8594-496d-c091-be68227ea91c",
+							"name": "zip",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "79be9d47-c81f-4e2c-cc9b-2e0918714365",
+							"name": "country",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "141b7e22-c802-4a63-c658-1854c89ea757",
+							"name": "createdAt",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e1316584-cd9c-4be2-a750-832b23105ca5",
+							"name": "updatedAt",
+							"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+							"name": "warehouse",
+							"parent": "731ccefb-a616-4d2d-c425-e38127204254",
+							"description": "",
+							"objectType": "array",
+							"objectName": "warehouse",
+							"isParent": true,
+							"children": [
+								{
+									"id": "c20c4653-bb62-453c-c586-882152144e9f",
+									"name": "id",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "1284e4fd-fba1-4cc2-e853-f3a50b4b0fcd",
+									"name": "warehouseNo",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "353a9a5b-2021-4800-bd0b-2956c6cc0cc8",
+									"name": "name",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "7035e196-2f7e-4848-d164-b866cbf2b9a4",
+									"name": "addressLine1",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "63df5395-e11d-45e8-e0c7-da81ea3de342",
+									"name": "addressLine2",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "dae2d85b-7287-4ff7-f530-0a6e5b46ea75",
+									"name": "addressLine3",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "b7829f22-7cbd-4667-bbe0-654036c19f85",
+									"name": "city",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "2f2a7961-8594-496d-c091-be68227ea91c",
+									"name": "zip",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "79be9d47-c81f-4e2c-cc9b-2e0918714365",
+									"name": "country",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "141b7e22-c802-4a63-c658-1854c89ea757",
+									"name": "createdAt",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "e1316584-cd9c-4be2-a750-832b23105ca5",
+									"name": "updatedAt",
+									"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "69a28e5e-441e-4a57-9a82-cff70ccbf025",
+							"name": "id",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "55563951-b9df-4de7-e38c-68b4b40cac49",
+							"name": "category",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f9e9f3a9-6253-4263-d8a4-7714421c51be",
+							"name": "title",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0bf9f186-b6b1-41de-d320-b48db990cdea",
+							"name": "description",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "990e9a36-b64a-4aa0-ae04-e77404dd35df",
+							"name": "createdAt",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "3b3400c8-638c-4b74-ecd8-a33e95994eb2",
+							"name": "updatedAt",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"name": "productcategory",
+							"parent": "731ccefb-a616-4d2d-c425-e38127204254",
+							"description": "",
+							"objectType": "array",
+							"objectName": "productcategory",
+							"isParent": true,
+							"children": [
+								{
+									"id": "69a28e5e-441e-4a57-9a82-cff70ccbf025",
+									"name": "id",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "55563951-b9df-4de7-e38c-68b4b40cac49",
+									"name": "category",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "f9e9f3a9-6253-4263-d8a4-7714421c51be",
+									"name": "title",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "0bf9f186-b6b1-41de-d320-b48db990cdea",
+									"name": "description",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "990e9a36-b64a-4aa0-ae04-e77404dd35df",
+									"name": "createdAt",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "3b3400c8-638c-4b74-ecd8-a33e95994eb2",
+									"name": "updatedAt",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "fd038366-b9ae-4095-936f-5afc2b0e5017",
+									"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"name": "banner",
+									"objectType": "string",
+									"description": "",
+									"required": false,
+									"value": "",
+									"minLength": "",
+									"maxLength": "",
+									"default": "",
+									"example": "",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "731ccefb-a616-4d2d-c425-e38127204254",
+							"name": "result",
+							"parent": "",
+							"description": "",
+							"objectType": "object",
+							"objectName": "result",
+							"isParent": true,
+							"children": [
+								{
+									"id": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+									"name": "countries",
+									"parent": "731ccefb-a616-4d2d-c425-e38127204254",
+									"description": "",
+									"objectType": "array",
+									"objectName": "countries",
+									"isParent": true,
+									"children": [
+										{
+											"id": "eef18268-b65c-43c6-e5fc-b6342654c6cf",
+											"name": "id",
+											"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "5ae2cab6-c2c3-452f-b52d-74f913a29e89",
+											"name": "isoCode",
+											"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "2857f62c-9457-46fb-facd-6af4cf064ad1",
+											"name": "name",
+											"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "6d32e729-4134-4bc0-efbf-f7cd1f5f9572",
+											"name": "createdAt",
+											"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "cbda3286-1b81-40a6-c13c-2ddf45fd5512",
+											"name": "updatedAt",
+											"parent": "2e57f140-b688-42a1-cf8c-5f50b5a89ff3",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+									"name": "warehouse",
+									"parent": "731ccefb-a616-4d2d-c425-e38127204254",
+									"description": "",
+									"objectType": "array",
+									"objectName": "warehouse",
+									"isParent": true,
+									"children": [
+										{
+											"id": "c20c4653-bb62-453c-c586-882152144e9f",
+											"name": "id",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "1284e4fd-fba1-4cc2-e853-f3a50b4b0fcd",
+											"name": "warehouseNo",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "353a9a5b-2021-4800-bd0b-2956c6cc0cc8",
+											"name": "name",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "7035e196-2f7e-4848-d164-b866cbf2b9a4",
+											"name": "addressLine1",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "63df5395-e11d-45e8-e0c7-da81ea3de342",
+											"name": "addressLine2",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "dae2d85b-7287-4ff7-f530-0a6e5b46ea75",
+											"name": "addressLine3",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "b7829f22-7cbd-4667-bbe0-654036c19f85",
+											"name": "city",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "2f2a7961-8594-496d-c091-be68227ea91c",
+											"name": "zip",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "79be9d47-c81f-4e2c-cc9b-2e0918714365",
+											"name": "country",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "141b7e22-c802-4a63-c658-1854c89ea757",
+											"name": "createdAt",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "e1316584-cd9c-4be2-a750-832b23105ca5",
+											"name": "updatedAt",
+											"parent": "ce5c4f9b-7ac8-4ac4-f029-47b931fddd69",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+									"name": "productcategory",
+									"parent": "731ccefb-a616-4d2d-c425-e38127204254",
+									"description": "",
+									"objectType": "array",
+									"objectName": "productcategory",
+									"isParent": true,
+									"children": [
+										{
+											"id": "69a28e5e-441e-4a57-9a82-cff70ccbf025",
+											"name": "id",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "55563951-b9df-4de7-e38c-68b4b40cac49",
+											"name": "category",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "f9e9f3a9-6253-4263-d8a4-7714421c51be",
+											"name": "title",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "0bf9f186-b6b1-41de-d320-b48db990cdea",
+											"name": "description",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "990e9a36-b64a-4aa0-ae04-e77404dd35df",
+											"name": "createdAt",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "3b3400c8-638c-4b74-ecd8-a33e95994eb2",
+											"name": "updatedAt",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "fd038366-b9ae-4095-936f-5afc2b0e5017",
+											"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+											"name": "banner",
+											"objectType": "string",
+											"description": "",
+											"required": false,
+											"value": "",
+											"minLength": "",
+											"maxLength": "",
+											"default": "",
+											"example": "",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "fd038366-b9ae-4095-936f-5afc2b0e5017",
+							"parent": "52563b90-9373-466c-e9c4-1b2fdb38eb0c",
+							"name": "banner",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "f7225d8d-c9f2-4292-dd50-abd8decea356",
+					"name": "customer",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "7c40cd9e-e023-4575-a558-8fed66b288f5",
+							"name": "customerNo",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9322e153-c50d-49cc-a029-3ac97b082db4",
+							"name": "business",
+							"parent": "",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b246d3f1-8fd8-4853-fb1c-35812c58b39d",
+							"name": "companyName",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ba8edea9-0af5-44ff-f2ad-c30403d97791",
+							"name": "contactName",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "223dcab7-3780-4624-d3ab-777f0edd6ae0",
+							"name": "firstName",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a50208b4-debf-4a03-a33c-f0a86945b92d",
+							"name": "lastName",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "792dc395-1e70-4b32-dfc5-feeb41793b10",
+							"name": "email",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "237f156c-0715-4d7d-d949-21d87ad7be45",
+							"name": "phone",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2de45b66-b33f-4297-db11-3fc8fab48788",
+							"name": "addressLine1",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "fe3d0919-c6b0-45a9-e4e4-8387aa816235",
+							"name": "addressLine2",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1284f0a8-50d6-4fe5-8a97-dcf9bf658446",
+							"name": "addressLine3",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0a62ac51-4abc-4a6a-a944-44fff6fc2183",
+							"name": "city",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "afa92046-b53a-44e8-8073-82d4318969d9",
+							"name": "zip",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a450b6aa-2636-4ae7-e633-80f8278c9d40",
+							"name": "country",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "bb2992d4-bd06-4894-f751-adbd7ced554d",
+							"name": "note",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "71ab6cf8-4c76-4cc0-fbb9-67c1896b4dde",
+							"name": "username",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "111f609f-5319-42d9-d075-31cc89321ba1",
+							"name": "id",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "8a7a052c-addc-4a12-a6a2-2debc87f1dba",
+							"name": "imageData",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "8bc83960-7d10-4319-9ea4-46b0c394d545",
+					"name": "status",
+					"description": "Status message",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "05092207-2961-4098-bf73-e482e25d3480",
+							"name": "statusCode",
+							"parent": "e7d0e021-7dd8-46f6-facc-be2644fd31e0",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "34f7cf99-676b-4ceb-9c6b-8c5045ecb2f7",
+							"name": "statusText",
+							"parent": "e7d0e021-7dd8-46f6-facc-be2644fd31e0",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "e7d0e021-7dd8-46f6-facc-be2644fd31e0",
+							"name": "result",
+							"parent": "",
+							"description": "",
+							"objectType": "object",
+							"objectName": "result",
+							"isParent": true,
+							"children": [
+								{
+									"id": "05092207-2961-4098-bf73-e482e25d3480",
+									"name": "statusCode",
+									"parent": "e7d0e021-7dd8-46f6-facc-be2644fd31e0",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "34f7cf99-676b-4ceb-9c6b-8c5045ecb2f7",
+									"name": "statusText",
+									"parent": "e7d0e021-7dd8-46f6-facc-be2644fd31e0",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "64f05449-b18d-4f6c-a8b1-831e023a8a6e",
+							"name": "tableData",
+							"objectType": "array",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": true,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "bafb819d-0d8f-440b-861f-c705858c0a6f",
+					"name": "product",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "6e218d95-cedf-4d16-e0ba-1f526efd30d5",
+							"name": "id",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a3c367e3-ac07-4df1-aa02-b3b3e8b0e68e",
+							"name": "productNo",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "0f1eaabe-5b90-4aab-ad54-7105b9d1518b",
+							"name": "title",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9acb28b6-d5c6-4c67-fa1c-d90b1d23310c",
+							"name": "description",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "43cd87c7-ef17-4c58-e760-728c023da2cb",
+							"name": "price",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "47b7fef0-00a6-4d4d-c5b4-cf754557c357",
+							"name": "currency",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2b09856f-2449-4f6c-aebe-360eed295011",
+							"name": "category",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ce09f32e-99f6-4e3c-e8a8-c3c57c2dad16",
+							"name": "imageId",
+							"parent": "",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "2f047f17-1c64-4fe7-f6c3-8856f2ea35e0",
+							"name": "createdAt",
+							"parent": "",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "438a4061-32cf-4bbe-fc24-65023e7e2e79",
+							"name": "updatedAt",
+							"parent": "",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "34a2063e-eb41-4ecf-a561-5338d7e16340",
+							"name": "stock",
+							"objectType": "number",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "6c8d1282-f3fc-4692-aac9-acb9dc453f0e",
+							"name": "favorite",
+							"objectType": "boolean",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "9ada694f-54e0-46d1-9275-9006bb7d97fa",
+							"name": "features",
+							"objectType": "array",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": true,
+							"children": [
+								{
+									"id": "65fedd9b-bac6-4a09-c12d-f5377876e0ca",
+									"parent": "9ada694f-54e0-46d1-9275-9006bb7d97fa",
+									"name": "feature",
+									"objectType": "string",
+									"description": "",
+									"required": false,
+									"value": "",
+									"minLength": "",
+									"maxLength": "",
+									"default": "",
+									"example": "",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "65fedd9b-bac6-4a09-c12d-f5377876e0ca",
+							"parent": "9ada694f-54e0-46d1-9275-9006bb7d97fa",
+							"name": "feature",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "d0506c13-ee41-44f3-feb2-4cb6c7dbdffc",
+					"name": "params",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "0948bb90-f290-44a3-e5d9-8d9aa1838772",
+							"name": "key",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "5a60cf7e-d7c4-4bb8-973e-83f260312e8f",
+							"name": "value",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "9b889657-c544-463d-de5f-b0d0a5902a14",
+					"name": "cart",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "ff7b5b35-9cc7-4de5-db7c-969a41a40128",
+							"name": "id",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "1163b782-3a1c-42e9-fcc3-7a0f521337ea",
+							"name": "productNo",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b1822b01-f8ca-4b5c-c8d4-2c8f727660a9",
+							"name": "title",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "96c0167a-d5b6-4281-f592-c923a7efc59e",
+							"name": "description",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "349e598c-b3b8-4004-bf63-1daeba2f2308",
+							"name": "price",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c83d74cc-1726-4ece-f819-03ec21d2f798",
+							"name": "currency",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "b66aebf3-ef1f-4671-d35f-dd685ee953d0",
+							"name": "category",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "f097cfe0-a6de-4bbe-ad45-6c043613baed",
+							"name": "imageId",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "4a506327-b166-464a-8868-90682431e9e7",
+							"name": "createdAt",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "a3245853-b89c-4340-fb55-e8a2d862ad7e",
+							"name": "updatedAt",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "43d62c0f-920e-4c77-d44a-9599af622f79",
+							"name": "stock",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "number",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "521ed491-14a3-4385-a22c-5b10c12d85f3",
+							"name": "feature",
+							"parent": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+							"description": "",
+							"objectType": "string",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+							"name": "features",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "array",
+							"objectName": "features",
+							"isParent": true,
+							"children": [
+								{
+									"id": "521ed491-14a3-4385-a22c-5b10c12d85f3",
+									"name": "feature",
+									"parent": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "e1cf1d29-d1f4-468c-f11c-be3da6e8c92a",
+							"name": "favorite",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"description": "",
+							"objectType": "boolean",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "556308a8-e21b-4981-de2e-7604139c330e",
+							"name": "product",
+							"parent": "9789e5b8-0f17-437c-8b39-8c5277d739f4",
+							"description": "",
+							"objectType": "array",
+							"objectName": "product",
+							"isParent": true,
+							"children": [
+								{
+									"id": "ff7b5b35-9cc7-4de5-db7c-969a41a40128",
+									"name": "id",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "1163b782-3a1c-42e9-fcc3-7a0f521337ea",
+									"name": "productNo",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "b1822b01-f8ca-4b5c-c8d4-2c8f727660a9",
+									"name": "title",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "96c0167a-d5b6-4281-f592-c923a7efc59e",
+									"name": "description",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "349e598c-b3b8-4004-bf63-1daeba2f2308",
+									"name": "price",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "c83d74cc-1726-4ece-f819-03ec21d2f798",
+									"name": "currency",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "b66aebf3-ef1f-4671-d35f-dd685ee953d0",
+									"name": "category",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "f097cfe0-a6de-4bbe-ad45-6c043613baed",
+									"name": "imageId",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "string",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "4a506327-b166-464a-8868-90682431e9e7",
+									"name": "createdAt",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "a3245853-b89c-4340-fb55-e8a2d862ad7e",
+									"name": "updatedAt",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "43d62c0f-920e-4c77-d44a-9599af622f79",
+									"name": "stock",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "number",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+									"name": "features",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "array",
+									"objectName": "features",
+									"isParent": true,
+									"children": [
+										{
+											"id": "521ed491-14a3-4385-a22c-5b10c12d85f3",
+											"name": "feature",
+											"parent": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "e1cf1d29-d1f4-468c-f11c-be3da6e8c92a",
+									"name": "favorite",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"description": "",
+									"objectType": "boolean",
+									"isParent": false,
+									"children": []
+								},
+								{
+									"id": "4649bac9-403f-4ebc-b4b4-14435487fb1b",
+									"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+									"name": "quantity",
+									"objectType": "string",
+									"description": "",
+									"required": false,
+									"value": "",
+									"minLength": "",
+									"maxLength": "",
+									"default": "",
+									"example": "",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "9789e5b8-0f17-437c-8b39-8c5277d739f4",
+							"name": "result",
+							"parent": "",
+							"description": "",
+							"objectType": "object",
+							"objectName": "result",
+							"isParent": true,
+							"children": [
+								{
+									"id": "556308a8-e21b-4981-de2e-7604139c330e",
+									"name": "product",
+									"parent": "9789e5b8-0f17-437c-8b39-8c5277d739f4",
+									"description": "",
+									"objectType": "array",
+									"objectName": "product",
+									"isParent": true,
+									"children": [
+										{
+											"id": "ff7b5b35-9cc7-4de5-db7c-969a41a40128",
+											"name": "id",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "1163b782-3a1c-42e9-fcc3-7a0f521337ea",
+											"name": "productNo",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "b1822b01-f8ca-4b5c-c8d4-2c8f727660a9",
+											"name": "title",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "96c0167a-d5b6-4281-f592-c923a7efc59e",
+											"name": "description",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "349e598c-b3b8-4004-bf63-1daeba2f2308",
+											"name": "price",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "c83d74cc-1726-4ece-f819-03ec21d2f798",
+											"name": "currency",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "b66aebf3-ef1f-4671-d35f-dd685ee953d0",
+											"name": "category",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "f097cfe0-a6de-4bbe-ad45-6c043613baed",
+											"name": "imageId",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "string",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "4a506327-b166-464a-8868-90682431e9e7",
+											"name": "createdAt",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "a3245853-b89c-4340-fb55-e8a2d862ad7e",
+											"name": "updatedAt",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "43d62c0f-920e-4c77-d44a-9599af622f79",
+											"name": "stock",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "number",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+											"name": "features",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "array",
+											"objectName": "features",
+											"isParent": true,
+											"children": [
+												{
+													"id": "521ed491-14a3-4385-a22c-5b10c12d85f3",
+													"name": "feature",
+													"parent": "ec6368c7-d406-49a9-ac2c-171e23c5d8c7",
+													"description": "",
+													"objectType": "string",
+													"isParent": false,
+													"children": []
+												}
+											]
+										},
+										{
+											"id": "e1cf1d29-d1f4-468c-f11c-be3da6e8c92a",
+											"name": "favorite",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"description": "",
+											"objectType": "boolean",
+											"isParent": false,
+											"children": []
+										},
+										{
+											"id": "4649bac9-403f-4ebc-b4b4-14435487fb1b",
+											"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+											"name": "quantity",
+											"objectType": "string",
+											"description": "",
+											"required": false,
+											"value": "",
+											"minLength": "",
+											"maxLength": "",
+											"default": "",
+											"example": "",
+											"isParent": false,
+											"children": []
+										}
+									]
+								},
+								{
+									"id": "61d7539f-daad-4c36-a687-b3e418f0a9c4",
+									"parent": "9789e5b8-0f17-437c-8b39-8c5277d739f4",
+									"name": "cart",
+									"objectType": "object",
+									"description": "",
+									"required": false,
+									"value": "",
+									"minLength": "",
+									"maxLength": "",
+									"default": "",
+									"example": "",
+									"isParent": true,
+									"children": [
+										{
+											"id": "a6847297-ade2-4744-c906-db3cb4854807",
+											"parent": "61d7539f-daad-4c36-a687-b3e418f0a9c4",
+											"name": "quantity",
+											"objectType": "string",
+											"description": "",
+											"required": false,
+											"value": "",
+											"minLength": "",
+											"maxLength": "",
+											"default": "",
+											"example": "",
+											"isParent": false,
+											"children": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "4649bac9-403f-4ebc-b4b4-14435487fb1b",
+							"parent": "556308a8-e21b-4981-de2e-7604139c330e",
+							"name": "quantity",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "61d7539f-daad-4c36-a687-b3e418f0a9c4",
+							"parent": "9789e5b8-0f17-437c-8b39-8c5277d739f4",
+							"name": "cart",
+							"objectType": "object",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": true,
+							"children": [
+								{
+									"id": "a6847297-ade2-4744-c906-db3cb4854807",
+									"parent": "61d7539f-daad-4c36-a687-b3e418f0a9c4",
+									"name": "quantity",
+									"objectType": "string",
+									"description": "",
+									"required": false,
+									"value": "",
+									"minLength": "",
+									"maxLength": "",
+									"default": "",
+									"example": "",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "a6847297-ade2-4744-c906-db3cb4854807",
+							"parent": "61d7539f-daad-4c36-a687-b3e418f0a9c4",
+							"name": "quantity",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "86895a63-7421-4e0c-a19f-bed12d83245c",
+					"name": "orderItem",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "4d5dc5e4-f4dc-42ba-9f9f-b72db7d373ef",
+							"name": "orderNo",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "ad3d7fa0-86f2-4260-d9e7-57f79cbcb750",
+							"name": "productNo",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "d3d76ef5-44ca-453d-ff94-bcbddc6c939e",
+							"name": "quantity",
+							"objectType": "number",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "e02ec8ec-b4d6-441f-d75a-7171fd0c65f1",
+					"name": "order",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "34798820-6443-4b8a-e31a-c8e81494beaf",
+							"name": "orderNo",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						},
+						{
+							"id": "c2431703-4750-4fe7-a11a-dbd6555913a5",
+							"name": "customerNo",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "56687a94-4f53-485e-b704-1d0586cc6fd6",
+					"name": "user",
+					"description": "",
+					"isInclude": false,
+					"properties": [
+						{
+							"id": "cc986f97-9891-40b1-eb53-a6dd7dfc3082",
+							"name": "result",
+							"objectType": "object",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": true,
+							"children": [
+								{
+									"id": "1c2d3815-b0aa-4a46-aa02-8d1e1ba93d13",
+									"parent": "cc986f97-9891-40b1-eb53-a6dd7dfc3082",
+									"name": "imageData",
+									"objectType": "string",
+									"description": "",
+									"required": false,
+									"value": "",
+									"minLength": "",
+									"maxLength": "",
+									"default": "",
+									"example": "",
+									"isParent": false,
+									"children": []
+								}
+							]
+						},
+						{
+							"id": "1c2d3815-b0aa-4a46-aa02-8d1e1ba93d13",
+							"parent": "cc986f97-9891-40b1-eb53-a6dd7dfc3082",
+							"name": "imageData",
+							"objectType": "string",
+							"description": "",
+							"required": false,
+							"value": "",
+							"minLength": "",
+							"maxLength": "",
+							"default": "",
+							"example": "",
+							"isParent": false,
+							"children": []
+						}
+					]
+				}
+			],
+			"documentation": [],
+			"name": "webshop",
+			"endpoint": "/api/serverscript/webshop",
+			"ver": "18.6.11.042",
+			"version": "1.0.0",
+			"description": null,
+			"mediaType": "application/json",
+			"securitySchemes": "",
+			"swaggerURI": null,
+			"swaggerSystem": null,
+			"apiType": "script",
+			"about": null,
+			"enableProxy": null,
+			"restrictAccess": false,
+			"enableTrace": true,
+			"enableIDE": true,
+			"internalAPI": null,
+			"isPublic": false,
+			"tlsAllowUntrusted": false,
+			"useOwnProcess": false,
+			"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+			"apiGroup": null,
+			"apiFormat": 0
+		}
+	]
+}

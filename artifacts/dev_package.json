@@ -1,0 +1,207 @@
+{
+	"id": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"createdAt": "2018-05-29T11:15:55.000Z",
+	"createdBy": "morten",
+	"git": {
+		"branch": "",
+		"remote": "https://github.com/sveingunnarlarsen/planet9-webshop.git",
+		"targetServers": [],
+		"testServers": []
+	},
+	"name": "Webshop",
+	"description": "Webshop package",
+	"ver": "21.6.28.171",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "5a7adbb6-99ab-48f2-9cec-de700fcbab69",
+			"ver": "20.4.23.1316",
+			"application": "p9webshop",
+			"title": "Planet 9 Webshop",
+			"description": "Planet 9 Webshop"
+		},
+		{
+			"id": "0f796e09-cd92-4a00-a597-095a5808ad22",
+			"ver": "18.5.29.1323",
+			"application": "p9customermaintain",
+			"title": "Customer",
+			"description": "Customer"
+		},
+		{
+			"id": "d6ddad62-02f8-4d99-b79c-2f9c144c03a6",
+			"ver": "18.6.5.1529",
+			"application": "p9datauploader",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "8745dd55-fa52-434b-acb3-509b56213707",
+			"name": "webshop",
+			"ver": "18.6.11.042",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [
+		{
+			"id": "61836814-c0b8-4523-95c1-753afe37cc46",
+			"name": "p9productfeature",
+			"description": "Webshop: Product Features",
+			"ver": "18.6.11.1055"
+		},
+		{
+			"id": "d2643288-07fc-46fa-a6d7-188ce047883d",
+			"name": "p9media",
+			"description": "WebShop: All images/media ",
+			"ver": "18.6.11.1055"
+		},
+		{
+			"id": "71c1f043-73d3-4a85-a12f-2fe7fe33eb1b",
+			"name": "p9productdescription",
+			"description": "Webshop: Product Descriptions",
+			"ver": "18.6.11.1055"
+		},
+		{
+			"id": "a7b3288c-9dc1-45b5-a7f3-d525daba26e7",
+			"name": "p9wishlist",
+			"description": "Webshop: Wishlist",
+			"ver": "18.10.30.155"
+		},
+		{
+			"id": "1e422fda-e5ac-4672-bcbe-319ad104f176",
+			"name": "p9productcategory",
+			"description": "Webshop: Product Category",
+			"ver": "20.12.21.953"
+		},
+		{
+			"id": "d64e3997-72de-4aa5-af35-a4af954dca88",
+			"name": "p9customer",
+			"description": "WebShop: Customers",
+			"ver": "18.6.11.1055"
+		},
+		{
+			"id": "81a5f20a-71b1-449a-81da-b6f0557de010",
+			"name": "p9product",
+			"description": "Webshop: Products",
+			"ver": "20.12.21.119"
+		},
+		{
+			"id": "18ca3c19-1aef-47af-ab5d-cee87d746676",
+			"name": "p9stock",
+			"description": "Webshop: Stock",
+			"ver": "20.11.30.2047"
+		},
+		{
+			"id": "349d5378-23ce-4f2d-b364-2c9f71cc5fe6",
+			"name": "p9warehouse",
+			"description": "Webshop: Warehouse",
+			"ver": "20.12.21.952"
+		},
+		{
+			"id": "52fb9bcb-cc9c-4127-879d-143d5fd99f18",
+			"name": "p9countries",
+			"description": "WebShop: Countries",
+			"ver": "20.12.21.952"
+		}
+	],
+	"jsclass": [
+		{
+			"id": "ceaa091c-b350-4281-8c0d-06d7e6938fea",
+			"name": "WebshopUploadTableData",
+			"ver": "18.8.20.146",
+			"description": "Webshop: Upload Table Data",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "0860e35c-7fc5-4974-bff2-16bef95e6ea6",
+			"name": "WebshopWishlistUpdate",
+			"ver": "18.8.20.146",
+			"description": "Webshop: Update Wishlist",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "547900f0-36c4-4ad4-ba3e-0b25fdc2ee2e",
+			"name": "WebshopCustomerDelete",
+			"ver": "18.8.20.1342",
+			"description": "Webshop: Delete customer",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "00eba5e6-91a7-4525-8d82-3ac4352fc6e2",
+			"name": "WebshopCustomerUpdate",
+			"ver": "18.8.20.143",
+			"description": "Webshop: Update customer",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "19f655ef-b4eb-4ff6-96ec-3a6587f7da5c",
+			"name": "WebshopPostTableData",
+			"ver": "18.8.20.145",
+			"description": "Webshop: Post Table Data",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "9dc7e0b5-404a-40a0-8c8f-ab13f13f1418",
+			"name": "WebshopProductList",
+			"ver": "18.8.20.146",
+			"description": "Webshop: Get Product List",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "56f5682c-ccf3-4fd7-9f7e-cecb4f9e2680",
+			"name": "WebshopUploadProfilePicture",
+			"ver": "18.8.20.146",
+			"description": "Webshop: Upload Profile Picture",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "cc19b421-0461-4a23-b831-9d2d05e8462b",
+			"name": "WebshopMasterdataRead",
+			"ver": "18.8.20.145",
+			"description": "Webshop: Read Masterdata",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "4afc8d05-2dd4-4759-9805-7a87e722b989",
+			"name": "WebshopProductRead",
+			"ver": "18.8.20.146",
+			"description": "Webshop: Get Product",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "8bb3a14a-ec2c-40dc-8e1c-506064b9668d",
+			"name": "WebshopCustomerList",
+			"ver": "18.8.20.143",
+			"description": "Webshop: Get customer List",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		},
+		{
+			"id": "ae075155-0288-4d23-8c7f-8647bc356352",
+			"name": "WebshopCustomerRead",
+			"ver": "18.8.20.143",
+			"description": "Webshop: Read customer",
+			"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c"
+		}
+	],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": []
+}

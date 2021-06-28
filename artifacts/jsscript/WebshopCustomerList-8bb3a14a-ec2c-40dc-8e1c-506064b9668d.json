@@ -1,0 +1,34 @@
+{
+	"id": "8bb3a14a-ec2c-40dc-8e1c-506064b9668d",
+	"createdAt": "2018-04-11T08:19:03.000Z",
+	"createdBy": "oah",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "d64e3997-72de-4aa5-af35-a4af954dca88",
+			"selected": true,
+			"name": "p9customer",
+			"contextname": "",
+			"enabled": true
+		}
+	],
+	"apis": [],
+	"name": "WebshopCustomerList",
+	"ver": "18.8.20.143",
+	"description": "Webshop: Get customer List",
+	"content": [
+		"==OBJECT STRING==",
+		"// Get Data from DB ",
+		"result = await tables.p9customer.find();",
+		"// console.log(result);",
+		"// log.info(result);",
+		" "
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "b348e8c2-3ad0-4d52-8334-58f371f58d7c",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0"
+}

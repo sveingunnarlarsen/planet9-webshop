@@ -1,0 +1,27 @@
+{
+	"id": "52fb9bcb-cc9c-4127-879d-143d5fd99f18",
+	"createdAt": "2018-04-10T13:42:54.000Z",
+	"createdBy": "oah",
+	"fields": [
+		{
+			"fieldName": "isoCode",
+			"fieldType": "text",
+			"id": "1e7a4cf1-eb2b-4bf1-8192-a1ef2e3b6293",
+			"description": "ISO Code"
+		},
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"id": "c3f79114-e400-42b5-a78d-7b2af5b726da",
+			"description": "Name"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "p9countries",
+	"description": "WebShop: Countries",
+	"ver": "20.12.21.952",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

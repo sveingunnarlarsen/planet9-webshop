@@ -1,0 +1,63 @@
+{
+	"id": "349d5378-23ce-4f2d-b364-2c9f71cc5fe6",
+	"createdAt": "2018-06-05T13:11:06.000Z",
+	"createdBy": "morten",
+	"fields": [
+		{
+			"fieldName": "warehouseNo",
+			"fieldType": "text",
+			"id": "8d9cd2c6-6402-4bb9-be9c-57c4ddd12367",
+			"description": "Warehouse"
+		},
+		{
+			"fieldName": "name",
+			"fieldType": "text",
+			"id": "90607e94-e0e5-41d1-ad36-1f5bd44dd89c",
+			"description": "Name"
+		},
+		{
+			"fieldName": "addressLine1",
+			"fieldType": "text",
+			"id": "8f98cd5c-6bf6-4fe3-9bfa-eeaa930bc93b",
+			"description": "Address 1"
+		},
+		{
+			"fieldName": "addressLine2",
+			"fieldType": "text",
+			"id": "dadf7d6f-6207-4a60-bee8-46ea3f53e35e",
+			"description": "Address 2"
+		},
+		{
+			"fieldName": "addressLine3",
+			"fieldType": "text",
+			"id": "69b6fdb6-1c89-43ab-867c-13dbe73e8505",
+			"description": "Address 3"
+		},
+		{
+			"fieldName": "city",
+			"fieldType": "text",
+			"id": "c5982444-b627-4817-9e38-6f57dc5b1a96",
+			"description": "City"
+		},
+		{
+			"fieldName": "zip",
+			"fieldType": "text",
+			"id": "e83dd9e3-116d-441e-a934-87ac37e13dfd",
+			"description": "ZIP"
+		},
+		{
+			"fieldName": "country",
+			"fieldType": "text",
+			"id": "e820d796-cd21-4455-9387-8906cd8fad11",
+			"description": "Country"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "p9warehouse",
+	"description": "Webshop: Warehouse",
+	"ver": "20.12.21.952",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}

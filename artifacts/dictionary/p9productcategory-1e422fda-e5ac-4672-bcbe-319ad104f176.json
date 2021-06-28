@@ -1,0 +1,43 @@
+{
+	"id": "1e422fda-e5ac-4672-bcbe-319ad104f176",
+	"createdAt": "2018-04-19T06:24:41.000Z",
+	"createdBy": "morten",
+	"fields": [
+		{
+			"fieldName": "category",
+			"fieldType": "text",
+			"id": "e198c4d9-436f-48dd-bdf1-6d4894286b70",
+			"description": "Category"
+		},
+		{
+			"fieldName": "title",
+			"fieldType": "text",
+			"id": "81972fc9-90f2-47c3-ad3b-c79808dc2011",
+			"description": "Name"
+		},
+		{
+			"fieldName": "description",
+			"fieldType": "text",
+			"id": "695517b9-10a8-42cb-b113-7b541f2d8692",
+			"description": "Description"
+		},
+		{
+			"fieldName": "sorter",
+			"fieldType": "decimal",
+			"id": "e255f23d-bae7-486a-8645-a19cbec2bcb5"
+		},
+		{
+			"fieldName": "banner",
+			"fieldType": "text",
+			"id": "85045ad4-319d-40f5-8b60-50ab66eedd93"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "p9productcategory",
+	"description": "Webshop: Product Category",
+	"ver": "20.12.21.953",
+	"package": "3b6d7a6b-5bd6-40e8-b5d4-70e4be5c46e0",
+	"rolesRead": [],
+	"rolesWrite": []
+}
